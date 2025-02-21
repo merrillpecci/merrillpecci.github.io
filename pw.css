@@ -1,0 +1,349 @@
+/* Global Styles */ 
+p {
+	font-family: "Avenir";
+	font-size: 14pt;		
+	font-weight: lighter;
+	text-align: justify;
+}
+
+/* Body Style - note: may need to override in other sections*/
+body { 
+	color: #172617;
+	background-color: #cef6cb;
+}
+
+h2 {
+	font-family: "Avenir";
+	color: #172617;
+	background-color: #cef6cb;
+	text-align: justify;
+}
+
+h3 {
+	font-weight: lighter;
+}
+
+/* Header Styles */
+.header {
+	font-family: Avenir;
+	font-size: 16pt;
+	text-align: center;
+}
+
+/* Navbar & Link Styles */
+.topnav {
+  overflow: hidden; 
+  background-color: darkolivegreen;
+  text-align: center; 
+}
+
+.navbar a {
+  float: none;
+  display: inline-block;
+  color: whitesmoke;
+  padding: 10px
+}
+
+li {display: inline-block;
+	margin-right: 10px; 
+}
+
+.navbar {
+	text-decoration: none;
+	color: whitesmoke; 
+	cursor: pointer; 
+	}
+
+.navbar: visited {
+		text-decoration: none; 
+		color: #172617; 
+		}
+
+/*HOME PAGE */
+
+.column-left {
+  float: left;
+  width: 33.33%;
+  box-sizing: border-box;
+  padding-right: 5px;
+}
+
+.column-right {
+	float: left;
+	width: 66.66%;
+	box-sizing: border-box;
+	padding-right: 25px;
+}
+
+.image-container img {
+	max-width: 100%;
+	float: left;
+	margin: 20px;
+}
+
+.image-container {
+	width: 90%;
+	height: auto;
+	display: block;
+	position: relative;
+}
+
+/*RESUME PAGE - none at the moment, chose to embed pdf*/
+
+
+/*VALUES PAGE */ 
+
+.values-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; /* Chooses direction that flex items are placed in a flex container (see sources below)*/ 
+    align-items: right;
+}
+
+.values-content {
+    display: flex;
+    align-items: top; 
+    margin-bottom: 20px; 
+}
+
+.values-content img {
+    width: 20%;
+    max-width: 100%;
+    border: 2px solid black;
+    box-sizing: border-box;
+    margin-right: 20px; 
+}
+
+.values-content p {
+    flex: 1; /* Added so the text grows or shrink within the flex container */
+    font-size: 13pt;
+    padding-right: 30px; 
+    margin-right: auto; 
+    text-align: justify; 
+}
+
+hr {
+    margin: 20px 0; /* Added margin on each side of the the horizontal line */
+    border: darkolivegreen;
+    border-top: 2px solid darkolivegreen; 
+}
+
+/*HOBBIES PAGE*/
+
+.hobby {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 60px;
+}
+
+.hobby-imagecontainer {
+	display: flex;
+  justify-content: center;
+  align-items: left;
+  width: 75%;
+}
+
+.hobby-imagecontainer img {
+    width: 40%; 
+    height: auto; 
+    object-fit: cover; /* Crops the images */
+    margin-right: 10px;
+}
+
+.hobbies h2 {
+	text-align: center;
+	font-family: "Avenir";
+	font-size: 32px;
+} 
+
+.hobbies h3 {
+	text-align: center;
+	font-size: 24px;
+	font-family: "Avenir";
+	font-weight: bolder;
+}
+
+.hobbies p {
+    text-align: center;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.footer-content p {
+	text-align: center;
+	font-size: 12;
+}
+
+/*CONNECT PAGE */ 
+
+.connect-content {
+	display: flex;
+	justify-content: center;
+}
+
+.icons {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  flex-wrap: wrap; 
+}
+
+.icon {
+  text-align: center;
+  margin: 10px; 
+}
+
+.icon i {
+  font-size: 75px;
+  color: darkolivegreen; 
+}
+
+.icon span {
+  display: block;
+  margin-top: 5px; 
+  font-size: 14px;
+  font-family: "Avenir";
+}
+
+/*IMAGE SOURCES PAGE*/
+
+.source-list ul {
+	text-align: left;
+	word-wrap: break-word;
+	list-style-type: none;
+}
+
+.source-list li {
+	display: block;
+}
+
+/* RESPONSIVE DESIGN - MOBILE FRIENDLY*/
+
+/*Home Page - General*/
+@media screen and (max-width: 768px) {
+	h1 {
+		font-size: 24pt;
+	}
+
+	h3 {
+		font-size: 12pt;
+	}
+
+	p {
+		font-size: 12pt;
+	}
+
+  .column-left, .column-right {
+      width: 100%;
+      padding: 20px;
+  }
+  
+  .image-container img {
+      margin: 10px auto;
+  }
+  
+}
+
+
+/*Resume Page - none right now*/
+
+/*Values Page */
+
+@media screen and (max-width: 768px) {
+  .values-content img {
+      margin-bottom: 10px;
+      width: 60%;				/*Added this so I can make images larger without adjusting text */
+      max-width: none;  /*Added this so I can make images larger without adjusting text */
+  }
+
+  /*re-orient page so images stack above paragraphs, avoiding image distortion */
+  .values-content {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    margin-bottom: 40px; 
+	}
+
+	.values-content p{
+		font-size: 10pt; /*Fix text size */
+		padding-left: 20px;
+	}
+}
+
+
+/*Hobbies Page */
+
+@media screen and (max-width: 768px) {
+  .hobbies h2 {
+	text-align: center;
+	font-family: "Avenir";
+	font-size: 24px;
+} 
+
+.hobbies h3 {
+	text-align: center;
+	font-size: 12px;
+	font-family: "Avenir";
+	font-weight: bolder;
+}
+
+.hobbies p {
+    font-size: 10pt;
+    text-align: center;
+    margin-top: 10px;
+    padding: 20px;
+}
+}
+
+/*Connect Page */
+
+@media screen and (max-width: 768px) {
+			
+	.connect-content p {
+	font-size: 12pt;
+	}
+
+	.icon i {
+  font-size: 36px;
+  color: darkolivegreen; 
+	}
+}
+
+/*Sources Page*/
+
+@media screen and (max-width: 768px) {
+			
+	.source-list ul {
+      font-size: 12pt;
+      padding-left: 20px; 
+  }
+  
+  .source-list li {
+      margin-bottom: 10px; 
+  }
+  
+  .source-list h3 {
+      font-size: 18px; 
+  }
+
+/* sources:
+	Best practices and organization:
+		https://kinsta.com/blog/css-best-practices/ 
+	Link styling:
+		https://www.w3schools.com/css/css_link.asp
+	Navbar and Website Layout:
+		https://www.w3schools.com/css/css_website_layout.asp
+	Accessible color palette generator:
+		https://venngage.com/tools/accessible-color-palette-generator
+	Alt text best practices:
+		https://help.siteimprove.com/support/solutions/articles/80000863904
+	Values Page & Flexbox:
+		https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+		https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox
+	Hobbies Page:
+		https://www.digitalocean.com/community/tutorials/css-cropping-images-object-fit
+	Responsive layout media queries:
+		https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+
