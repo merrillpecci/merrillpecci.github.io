@@ -9,13 +9,13 @@ p {
 /* Body Style - note: may need to override in other sections*/
 body { 
 	color: #172617;
-	background-color: #FFFFEA; /*#cef6cb*/
+	background-color: /* #FFFFEA; */ #cef6cb;
 }
 
 h2 {
 	font-family: "Avenir";
 	color: #172617;
-	background-color: #FFFFEA; /*#cef6cb*/;
+	background-color: /* #FFFFEA; */ #cef6cb;
 	text-align: justify;
 }
 
