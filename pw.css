@@ -9,13 +9,13 @@ p {
 /* Body Style - note: may need to override in other sections*/
 body { 
 	color: #172617;
-	background-color: /* #FFFFEA; */ #cef6cb;
+	background-color: #FFFFEA; /*#cef6cb*/
 }
 
 h2 {
 	font-family: "Avenir";
 	color: #172617;
-	background-color: /* #FFFFEA; */ #cef6cb;
+	background-color: #FFFFEA; /*#cef6cb*/;
 	text-align: justify;
 }
 
@@ -54,7 +54,7 @@ li {display: inline-block;
 	cursor: pointer; 
 	}
 
-.navbar: visited {
+.navbar visited {
 		text-decoration: none; 
 		color: #172617; 
 		}
@@ -345,5 +345,5 @@ hr {
 	Hobbies Page:
 		https://www.digitalocean.com/community/tutorials/css-cropping-images-object-fit
 	Responsive layout media queries:
-		https://www.w3schools.com/css/css_rwd_mediaqueries.asp
-
+		https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
+		
